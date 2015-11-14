@@ -21,3 +21,4 @@ twbs:bootstrap
 momentjs:moment
 amr:parsley.js
 fortawesome:fontawesome
+skeleton:skeleton
