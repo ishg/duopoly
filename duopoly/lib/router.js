@@ -14,7 +14,8 @@ Router.configure({
 
 //Router.onBeforeAction(requireLogin, {except: ['landing']});
 
-Router.route('/', {name: 'profile'});
+Router.route('/', {name: 'landing'});
+Router.route('/profile', {name: 'profile'});
 Router.route('/register', {name: 'register'});
 Router.route('/communities', {name: 'communities'});
 Router.route('/requests', {name: 'requests'});
