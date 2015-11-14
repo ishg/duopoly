@@ -22,3 +22,5 @@ momentjs:moment
 amr:parsley.js
 fortawesome:fontawesome
 iron:router
+accounts-ui
+accounts-password
