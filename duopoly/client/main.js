@@ -7,3 +7,4 @@ ourApp.run(function($rootScope) {
 ourApp.controller('landing', function($scope) {
 
 });
+

@@ -16,15 +16,14 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-angular
 twbs:bootstrap
 momentjs:moment
 amr:parsley.js
 fortawesome:fontawesome
-<<<<<<< HEAD
 skeleton:skeleton
-=======
 iron:router
 accounts-ui
 accounts-password
->>>>>>> master
+blaze-html-templates
+ecmascript
+
