@@ -47,5 +47,27 @@ Meteor.startup(function() {
 
   }
 
+  if (Communities.find().count() === 0) {
+
+    // create sample polls
+    var sampleCommunities = [
+      {
+        name:'fitness'
+      },
+      {
+        name:'running',
+      },
+      {
+        name:'literature',
+      }
+    ];
+
+    // loop over each sample poll and insert into database
+    _.each(sampleCommunities, function(comm) {
+      Communities.insert(comm);
+    });
+
+  }
+
 });
 

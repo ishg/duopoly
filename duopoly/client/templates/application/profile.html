@@ -11,9 +11,16 @@
               <div class="row" style="text-align:center;">
                 <h3><a href="" id="addNewGoal"><i class="fa fa-plus"></i> Add New Goal</a></h3> 
               </div>
+              <div class="goals">
+                {{#each goals}}
+                    <div class="row">
+                    {{> goalItem}}
+                    </div>
+                {{/each}}
+              </div>
             </div>
 
-            {{> goalsList }}
+
 
 
             <div class="col-md-3">
