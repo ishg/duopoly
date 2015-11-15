@@ -1,53 +1,71 @@
 <template name="goalCreation">
     {{> header}}
     <div id="goalCreation">
-        <div class="row">
-            <div class="col-md-12">
-                <form role="form">
-                    <div class="form-group">
-                         
-                        <label for="goalName">
-                            Goal Name
-                        </label>
-                        <input class="form-control" id="name" type="text" />
-                         
-                        <label for="goalDescription">
-                            Goal Description
-                        </label>
-                        <textarea class="form-control" id="description" type="text" rows="4" placeholder="Tell us a few sentences about your goal."></textarea>
-
-                        <label for="partner">
-                            Wanna Partner?
-                        </label>
-
-                        <input type="radio" name="yesPartner" id="yesPartner" value="yes"/>
-                        <label for="yesPartner">Yes</label>
-
-                        <input type="radio" name="noPartner" id="noPartner" value="no"/>
-                        <label for="noPartner">No</label>
-
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="well">
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Add a Goal</legend>
+                  <div class="form-group">
+                    <label for="goalName" class="col-lg-2 control-label">Goal Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="goalName" placeholder="Name">
                     </div>
-
-                    <div class="form-group">
-
-                        <label for="communities">
-                            Communities
-                        </label>
-                        <input id="fitness" name="fitness" type="checkbox">
-                        <label for="fitness">Fitness</label>
-
-                        <input id="education" name="education" type="checkbox">
-                        <label for="education">Education</label>
-
-                        <input id="woodworking" name="woodworking" type="checkbox">
-                        <label for="woodworking">Woodworking</label>
-
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label">Description</label>
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="3" id="textArea"></textarea>
+                      <span class="help-block">Describe your goal in a few sentences.</span>
                     </div>
-                    <button type="submit" class="btn btn-default" id="submit">
-                        Submit
-                    </button>
-                </form>
-            </div>
-        </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">Partner Up?</label>
+                    <div class="col-lg-10">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                          Yes
+                        </label>
+                        &nbsp;&nbsp;
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          No
+                        </label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="select" class="col-lg-2 control-label">Selects</label>
+                    <div class="col-lg-10">
+                      <select multiple="" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Get notifications for this goal
+                        </label>
+                      </div>
+                      <br/>
+                      <button type="reset" class="btn btn-default">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+        <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
+    </div>
+    </div>
     </div>
 </template>
