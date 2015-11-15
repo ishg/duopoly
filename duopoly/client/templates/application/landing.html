@@ -7,17 +7,34 @@
                     <div class="inner">
                         <h2>Duopoly</h2>
                         <p>So.Mo.Lo, Bro</p>
-                        <div id="login">
-                            <form method="post" action="#">
-                                <input type="email" name="email" id="email" value="" placeholder="Email">
-                                <input type="password" name="password" id="password" value="" placeholder="Password">
 
-                                <ul class="actions">
-                                    <li><a href="#" class="button special">Login</a></li>
-                                    <li><a href="#" class="button">Sign Up</a></li>
-                                </ul>
-                            </form>
+                        <div class="row">
+              		      <div class="col-xs-6 col-xs-offset-3">
+                        <div id="loginbox">
+                          <form class="login" data-parsley-validate>
+                              <input type="email" required name="email-login" id="email-login" value="" placeholder="Email">
+                              <input type="password" required name="password-login" id="password-login" value="" placeholder="Password">
+
+                              <ul class="actions">
+                                  <li><input type="submit" class="button special" value="Login"></li>
+                                  <li><a style="margin-top:5px;" href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()" class="button">Sign Up</a></li>
+                              </ul>
+                          </form>
                         </div>
+                        <div id="signupbox">
+              				    <form class="signup" data-parsley-validate>
+              				  		<input type="text" required name="username-signup" id="username-signup" value="" placeholder="Username">
+              				  		<input type="email" required name="email-signup" id="email-signup" value="" placeholder="Email">
+                            <input type="password" required name="password-signup" id="password-signup" value="" placeholder="Password">
+              				      <ul class="actions">
+                                <li><a href="#" style="margin-top:5px;" onClick="$('#signupbox').hide(); $('#loginbox').show()" class="button">Login</a></li>
+                                <li><input type="submit" value="Sign Up" class="button special"></li>
+                            </ul>
+              				    </form>
+                        </div>
+                      	</div>
+                      	</div>
+
                     </div>
                     <a href="#one" class="more scrolly">Learn More</a>
                 </section>
