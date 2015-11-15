@@ -1,5 +1,4 @@
 <template name="landing">
-  <body class="landing">
     <!-- Page Wrapper -->
         <div id="page-wrapper">
             <!-- Banner -->
@@ -10,33 +9,20 @@
 
                         <div class="row">
               		      <div class="col-xs-6 col-xs-offset-3">
-                        <div id="loginbox">
-                          <form class="login" data-parsley-validate>
-                              <input type="email" required name="email-login" id="email-login" value="" placeholder="Email">
-                              <input type="password" required name="password-login" id="password-login" value="" placeholder="Password">
-
-                              <ul class="actions">
-                                  <li><input type="submit" class="button special" value="Login"></li>
-                                  <li><a style="margin-top:5px;" href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()" class="button">Sign Up</a></li>
+                         <form id="login">
+                             <input required type="email" placeholder="Email" id="email">
+                             <input required type="password" placeholder="Password" id="password">
+                             <ul class="actions">
+                                <li><a href="#" id="login-submit" class="button special">Login</a></li>
+                                <li><a href="#" id="signup-submit" class="button">Sign Up</a></li>
                               </ul>
-                          </form>
-                        </div>
-                        <div id="signupbox">
-              				    <form class="signup" data-parsley-validate>
-              				  		<input type="text" required name="username-signup" id="username-signup" value="" placeholder="Username">
-              				  		<input type="email" required name="email-signup" id="email-signup" value="" placeholder="Email">
-                            <input type="password" required name="password-signup" id="password-signup" value="" placeholder="Password">
-              				      <ul class="actions">
-                                <li><a href="#" style="margin-top:5px;" onClick="$('#signupbox').hide(); $('#loginbox').show()" class="button">Login</a></li>
-                                <li><input type="submit" value="Sign Up" class="button special"></li>
-                            </ul>
-              				    </form>
-                        </div>
+
+                             <p id="login-form-messages"></p>
+                         </form>
                       	</div>
                       	</div>
 
                     </div>
-                    <a href="#one" class="more scrolly">Learn More</a>
                 </section>
 
             <!-- One -->
@@ -133,7 +119,4 @@
                 </footer>
 
         </div>
-</body>
-
-
 </template>

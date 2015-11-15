@@ -1,15 +1,34 @@
 <template name="header">
-	<header id="header">
-		<h1>Duopoly</h1>
-		{{# if currentUser}}
-		<nav class="links">
-			<ul>
-				<li><a href="{{pathFor route='profile'}}">My Profile</a></li>
-				<li><a href="{{pathFor route='communities'}}">Communities</a></li>
-				<li><a href="{{pathFor route='requests'}}">Requests</a></li>
-				<li><a href="#" class="logout"><i class="fa fa-sign-out"></i>&nbsp; Logout</a></li>
-			</ul>
-		</nav>
-		{{/if}}
-	</header>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                         
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                             <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a class="navbar-brand" href="#">Duopoly</a>
+                    </div>
+                    {{# if currentUser}} 
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="{{pathFor route='profile'}}">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="{{pathFor route='communities'}}">Communities</a>
+                            </li>
+                            <li>
+                                <a href="{{pathFor route='requests'}}">Requests</a>
+                            </li>
+                            <li>
+                                <a href="#" class="logout"><i class="fa fa-sign-out"></i>&nbsp; Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    {{/if}} 
+                </nav>
+            </div>
+        </div>
+    </div>
 </template>

@@ -1,3 +1,4 @@
+Posts = new Mongo.Collection('posts');
 if (Posts.find().count() === 0) {
   Posts.insert({
     title: 'Introducing Telescope',
