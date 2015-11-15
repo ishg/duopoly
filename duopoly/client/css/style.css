@@ -18,3 +18,9 @@ body { padding-top: 95px; }
     color: #fff;
 }
 
+.goalCard{
+	background-color: #CCFF99;
+	outline-style: outset;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Template.profile.rendered = function () {
   $('.panel-title').text(Meteor.user().emails[0].address);
 };
