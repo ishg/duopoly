@@ -1,7 +1,18 @@
 <template name="goalItem">
-	<div class="goal">
-		<div class="goal-content">
-			<h3><a href="{{url}}">{{name}}</a></h3>
-		</div>
-	</div>
+	<div class="goalCard row">
+	  <div class="col-xs-10">
+      <h4>{{name}}</h4>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%"></div>
+      </div>
+      <p><strong>Deadline: </strong>{{deadline}}</p>
+      {{#each communities}}
+      	<span class="label label-success">{{this}}</span>
+      {{/each}}
+	  </div>
+	  <div style="text-align: center" class="col-xs-2">
+      <p><img alt="SOLO" src="http://lorempixel.com/140/140/" width="80%" style="border-radius: 50%"><br/>Buddy
+      </p>
+    </div>
+  </div>
 </template>

@@ -17,7 +17,7 @@ Meteor.startup(function() {
           'fitness',
           'running'
         ],
-        deadline: moment("12-25-2015", "MMM Do YY" ),
+        deadline: moment("12-25-2015", "MMM Do YY" ).format("MMM Do YYYY"),
         frequency: 'daily',
         notifications_bool: true,
         requests: []
@@ -26,14 +26,14 @@ Meteor.startup(function() {
         user: '',
         partner: '',
         completed: false,
-        progress: 30,
+        progress: 70,
         name: "Read one book every week",
         description: "Knowledged is supreme for understanding the mysteries of the universe. Also, Zuckerberg does this.",
         partner_bool: false,
         communities: [
           'literature'
         ],
-        deadline: moment("11-14-2016", "MMM Do YY" ),
+        deadline: moment("11-14-2016", "MMM Do YY" ).format("MMM Do YYYY"),
         frequency: 'weekly',
         notifications_bool: true,
         requests: []

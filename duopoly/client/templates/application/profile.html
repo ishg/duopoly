@@ -13,9 +13,7 @@
               </div>
               <div class="goals">
                 {{#each goals}}
-                    <div class="row">
                     {{> goalItem}}
-                    </div>
                 {{/each}}
               </div>
             </div>
@@ -29,7 +27,7 @@
                     <h3 class="panel-title">{{currentUser.email}}</h3>
                   </div>
                   <div class="panel-body">
-                    Panel content
+                    <img src="{{currentUserPicture}}" style="border-radius:50%" >
                   </div>
                 </div>
                 

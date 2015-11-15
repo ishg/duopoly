@@ -57,6 +57,12 @@ Template.profile.rendered = function () {
 Template.profile.helpers({
   goals: function() {
     return Goals.find();
+  },
+  currentUserPicture: function(){
+    var email = Meteor.user().emails[0].address;
+    var hash = CryptoJS.MD5(email);
+    console.log(hash);
+    return "http://www.gravatar.com/avatar/" + hash;
   }
 });
 
@@ -75,6 +81,13 @@ Template.goalCreation.events({
   }
 });
 
+/* Communities */
+Template.communities.helpers({
+  goals: function() {
+    return Goals.find();
+  }
+});
+
 /* Header */
 Template.header.events({
     'click .logout': function(event){
@@ -83,3 +96,5 @@ Template.header.events({
         Router.go('/');
     }
 });
+
+/* Misc Helpers */
