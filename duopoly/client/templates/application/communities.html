@@ -1,47 +1,39 @@
 <template name="communities">
 
- <!-- Navigation Bar -->
-  <div class="nav">
-    <a href="main.html">Duopoly</a>
-    <a href="requests.html">Requests</a> 
-    <a href="#">Communities</a>
-    <a href="profile.html">Profile</a>
-  </div>
+  <div id="communities">
 
-  <div class="container-fluid">
+    {{> header}}
 
-   <!-- List of Goals for Selected Community -->
-    <div class="col-md-9">
-      <div class="row">Goal A</div> 
-      <div class="row">Goal B</div>
-      <div class="row">Goal C</div>
-      <div class="row">Goal D</div>
-    </div>
+    <div class="container-fluid">
 
-   <!-- List of Communities -->
-    <div class="col-md-3" id="communities">
-
-     <!-- Subscribed Communities -->
-      <div class="row" id="subscribed">
-	 <li>Drinking</li>
-	 <li>Jackin' It</li>
-	 <li>Fitness</li>
+      <div class="col-md-9">
+        <div class="row">Goal A</div> 
+        <div class="row">Goal B</div>
+        <div class="row">Goal C</div>
+        <div class="row">Goal D</div>
       </div>
 
-      <br><br>
+      <div class="col-md-3" id="communities">
 
-     <!-- Unsubscribed Communities -->
-      <div class="row" id="unsubscribed">
-        <ul>
-	 <li>Literature</li>
-	 <li>Self-Respect</li>
-	 <li>Community A</li>
-	 <li>Community B</li>
-	 <li>Community C</li>
-	 <li>Community D</li>
-	</ul>
+        <div class="row" id="subscribed">
+  	  <li>Drinking</li><br>
+	  <li>Jackin' It</li><br>
+	  <li>Fitness</li><br>
+        </div>
+
+        <br>
+
+        <div class="row" id="unsubscribed">
+          <ul>
+  	    <li>Literature</li>
+	    <li>Self-Respect</li>
+	    <li>Community A</li>
+	    <li>Community B</li>
+	    <li>Community C</li>
+	    <li>Community D</li>
+	  </ul>
+        </div>
       </div>
-
     </div>
   </div>  
 </template>
