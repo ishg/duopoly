@@ -11,12 +11,12 @@ if (Meteor.isClient){
 
 // Allow user to perform certain functions
 Goals.allow({
-  update: function(username,) {},
-  remove: function() {},
+  update: function(username) {},
+  remove: function() {}
 });
 
 // Deny user from performing these functions
 Goals.deny({
-  update: function() {};
+  update: function() {}
 });
    
