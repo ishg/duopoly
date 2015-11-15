@@ -15,11 +15,9 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 
 insecure                # Allow all DB writes from clients (for prototyping)
-twbs:bootstrap
 momentjs:moment
 amr:parsley.js
 fortawesome:fontawesome
-skeleton:skeleton
 iron:router
 accounts-ui
 accounts-password

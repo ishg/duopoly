@@ -3,11 +3,9 @@ Template.profile.rendered = function () {
 };
 
 Template.profile.helpers({
-  
   goals: function() {
     return Goals.find();
   }
-  
 });
 
 Template.profile.events({
