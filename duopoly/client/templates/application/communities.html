@@ -1,42 +1,57 @@
 <template name="communities">
 
- <!-- Navigation Bar -->
-  {{> header}}
+  <div id="communities">
 
-  <div class="container-fluid">
+    {{> header}}
 
-   <!-- List of Goals for Selected Community -->
-    <div class="col-md-9">
-      <div class="row">Goal A</div> 
-      <div class="row">Goal B</div>
-      <div class="row">Goal C</div>
-      <div class="row">Goal D</div>
-    </div>
+    <div class="container-fluid">
 
-   <!-- List of Communities -->
-    <div class="col-md-3" id="communities">
+      <div class="col-md-9">
 
-     <!-- Subscribed Communities -->
-      <div class="row" id="subscribed">
-	 <li>Drinking</li>
-	 <li>Jackin' It</li>
-	 <li>Fitness</li>
+
+
+        <div class="goalCard media">
+      	  <div class="media-body col-md-8">
+            <h2>Train for Marathon</h2>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+            </div>
+            <span class="label label-success">Fitness</span>
+            <span class="label label-success">Literature</span>
+            <span class="label label-success">Woodworking</span>            
+      	  </div>
+      	  <div class="media-left col-md-2">
+            <h5 style="text-align: center">Buddy</h5>
+            <img alt="SOLO" src="http://lorempixel.com/140/140/" height="50%" style="border-radius: 50%">
+          </div>
+        </div>
+
+        <div class="row">Goal B</div>
+        <div class="row">Goal C</div>
+        <div class="row">Goal D</div>
       </div>
 
-      <br><br>
+      <div class="col-md-3" id="communities">
 
-     <!-- Unsubscribed Communities -->
-      <div class="row" id="unsubscribed">
-        <ul>
-	 <li>Literature</li>
-	 <li>Self-Respect</li>
-	 <li>Community A</li>
-	 <li>Community B</li>
-	 <li>Community C</li>
-	 <li>Community D</li>
-	</ul>
+        <div class="row" id="subscribed">
+  	      <li>Drinking</li><br>
+	        <li>Jackin' It</li><br>
+	        <li>Fitness</li><br>
+        </div>
+
+        <br>
+
+        <div class="row" id="unsubscribed">
+          <ul>
+  	        <li>Literature</li>
+      	    <li>Self-Respect</li>
+      	    <li>Community A</li>
+      	    <li>Community B</li>
+      	    <li>Community C</li>
+      	    <li>Community D</li>
+	        </ul>
+        </div>
       </div>
-
     </div>
   </div>  
 </template>
