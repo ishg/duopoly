@@ -1,0 +1,53 @@
+<template name="goalCreation">
+    {{> header}}
+    <div id="goalCreation">
+        <div class="row">
+            <div class="col-md-12">
+                <form role="form">
+                    <div class="form-group">
+                         
+                        <label for="goalName">
+                            Goal Name
+                        </label>
+                        <input class="form-control" id="name" type="text" />
+                         
+                        <label for="goalDescription">
+                            Goal Description
+                        </label>
+                        <textarea class="form-control" id="description" type="text" rows="4" placeholder="Tell us a few sentences about your goal."></textarea>
+
+                        <label for="partner">
+                            Wanna Partner?
+                        </label>
+
+                        <input type="radio" name="yesPartner" id="yesPartner" value="yes"/>
+                        <label for="yesPartner">Yes</label>
+
+                        <input type="radio" name="noPartner" id="noPartner" value="no"/>
+                        <label for="noPartner">No</label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="communities">
+                            Communities
+                        </label>
+                        <input id="fitness" name="fitness" type="checkbox">
+                        <label for="fitness">Fitness</label>
+
+                        <input id="education" name="education" type="checkbox">
+                        <label for="education">Education</label>
+
+                        <input id="woodworking" name="woodworking" type="checkbox">
+                        <label for="woodworking">Woodworking</label>
+
+                    </div>
+                    <button type="submit" class="btn btn-default" id="submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>
