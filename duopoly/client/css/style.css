@@ -2,3 +2,19 @@ a:hover{
 	text-decoration: none;
 }
 
+a{
+	text-decoration: none;
+}
+
+body { padding-top: 95px; }
+
+#goalCreation {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#goalCreation textarea {
+    background-color: rgba(144, 144, 144, 0.25);
+    color: #fff;
+}
+
