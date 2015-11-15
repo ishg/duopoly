@@ -1,18 +1,51 @@
-Posts = new Mongo.Collection('posts');
-if (Posts.find().count() === 0) {
-  Posts.insert({
-    title: 'Introducing Telescope',
-    url: 'http://sachagreif.com/introducing-telescope/'
-  });
+Meteor.startup(function() {
 
-  Posts.insert({
-    title: 'Meteor',
-    url: 'http://meteor.com'
-  });
+  // if there are no polls available create sample data
+  if (Goals.find().count() === 0) {
 
-  Posts.insert({
-    title: 'The Meteor Book',
-    url: 'http://temeteorbook.com'
-  });
-}
+    // create sample polls
+    var sampleGoals = [
+      {
+        user: '',
+        patner: '',
+        completed: false,
+        progress: 30,
+        name: "Run 3 miles every day",
+        description: "Run a 5K every day to get better. Blah blah blah. Training for a half marathon.",
+        partner_bool: true,
+        communities: [
+          'fitness',
+          'running'
+        ],
+        deadline: moment("12-25-2015", "MMM Do YY" ),
+        frequency: 'daily',
+        notifications_bool: true,
+        requests: []
+      },
+      {
+        user: '',
+        partner: '',
+        completed: false,
+        progress: 30,
+        name: "Read one book every week",
+        description: "Knowledged is supreme for understanding the mysteries of the universe. Also, Zuckerberg does this.",
+        partner_bool: false,
+        communities: [
+          'literature'
+        ],
+        deadline: moment("11-14-2016", "MMM Do YY" ),
+        frequency: 'weekly',
+        notifications_bool: true,
+        requests: []
+      }
+    ];
+
+    // loop over each sample poll and insert into database
+    _.each(sampleGoals, function(goal) {
+      Goals.insert(goal);
+    });
+
+  }
+
+});
 

@@ -1,0 +1,1 @@
+Communities = new Mongo.Collection('communities');
