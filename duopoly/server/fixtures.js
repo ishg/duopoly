@@ -20,7 +20,8 @@ Meteor.startup(function() {
         deadline: moment("12-25-2015", "MMM Do YY" ).format("MMM Do YYYY"),
         frequency: 'daily',
         notifications_bool: true,
-        requests: []
+        sentRequests: ["Bob", "Billy", "Joe"],
+        receivedRequests: ["Mohinder", "Baldev"]
       },
       {
         user: '',
@@ -36,7 +37,8 @@ Meteor.startup(function() {
         deadline: moment("11-14-2016", "MMM Do YY" ).format("MMM Do YYYY"),
         frequency: 'weekly',
         notifications_bool: true,
-        requests: []
+        sentRequests: ["Brendan"],
+        receivedRequests: ["Vladmir", "Joseph"]
       }
     ];
 

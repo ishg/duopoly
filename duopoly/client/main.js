@@ -88,6 +88,13 @@ Template.communities.helpers({
   }
 });
 
+/* Requests */
+Template.requests.helpers({
+  goals: function() {
+    return Goals.find();
+  }
+});
+
 /* Header */
 Template.header.events({
     'click .logout': function(event){
