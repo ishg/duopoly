@@ -17,3 +17,4 @@ Router.configure({
 Router.route('/', {name: 'profile'});
 Router.route('/communities', {name: 'communities'});
 Router.route('/requests', {name: 'requests'});
+Router.route('/goalCreation', {name: 'goalCreation'});
