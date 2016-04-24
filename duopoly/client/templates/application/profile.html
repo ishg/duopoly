@@ -1,0 +1,51 @@
+<template name="profile">
+    <!-- Navigation -->
+    {{> header}}
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-9">
+              <div class="row" style="text-align:center;">
+                <h3><a href="" id="addNewGoal"><i class="fa fa-plus"></i> Add New Goal</a></h3> 
+              </div>
+              <div class="goals">
+                {{#each goals}}
+                    {{> goalItem}}
+                {{/each}}
+              </div>
+            </div>
+
+
+
+
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                  <div class="panel-heading" style="text-align:center;">
+                    <h3 class="panel-title">{{currentUser.email}}</h3>
+                  </div>
+                  <div class="panel-body">
+                    <img src="{{currentUserPicture}}" style="border-radius:50%" >
+                  </div>
+                </div>
+                
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Communities</div>
+                  <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Category 1</a>
+                        <a href="#" class="list-group-item">Category 2</a>
+                        <a href="#" class="list-group-item">Category 3</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</template>

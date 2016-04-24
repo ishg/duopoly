@@ -1,0 +1,69 @@
+<template name="goalCreation">
+    {{> header}}
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="well">
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Add a Goal</legend>
+                  <div class="form-group">
+                    <label for="goalName" class="col-lg-2 control-label">Goal Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="goalName" placeholder="Name">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label">Description</label>
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="3" id="textArea"></textarea>
+                      <span class="help-block">Describe your goal in a few sentences.</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">Partner Up?</label>
+                    <div class="col-lg-10">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                          Yes
+                        </label>
+                        &nbsp;&nbsp;
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          No
+                        </label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="select" class="col-lg-2 control-label">Selects</label>
+                    <div class="col-lg-10">
+                      <select multiple="" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Get notifications for this goal
+                        </label>
+                      </div>
+                      <br/>
+                      <button type="reset" class="btn btn-default">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+        <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
+    </div>
+    </div>
+</template>

@@ -1,0 +1,40 @@
+a:hover{
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body { 
+	background-color:#EAF1F1;
+}
+
+.goalCard{
+	background-color: #FFFFF0;
+	padding: 1%;
+	border-radius: 15px;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
+}
+
+.requestCard{
+	background-color: #FFFFFA;
+	padding: 1%;
+	border-radius: 15px;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.list-group-item{
+	background-color: #FFFFFA;
+}
+
+.progress{
+	height: 18px;
+}
+
+.noBullet{
+	list-style: none;
+}

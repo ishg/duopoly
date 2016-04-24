@@ -1,0 +1,46 @@
+<template name="communities">
+
+  <div id="communities">
+
+    {{> header}}
+    <div class="container-fixed">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="goals">
+            {{#each goals}}
+                {{> goalItem}}
+            {{/each}}
+          </div>
+        </div>
+
+        <div class="col-sm-3" id="communities">
+
+          <div class="row" id="subscribed">
+    	      <ul>
+              <li>Drinking</li><br>
+    	        <li>Jackin' It</li><br>
+    	        <li>Fitness</li><br>
+            </ul>
+          </div>
+
+          <br>
+
+          <div class="row" id="unsubscribed">
+            <ul>
+    	        <li>Literature</li>
+        	    <li>Self-Respect</li>
+        	    <li>Community A</li>
+        	    <li>Community B</li>
+        	    <li>Community C</li>
+        	    <li>Community D</li>
+  	        </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    </div>
+  </div>  
+</template>
