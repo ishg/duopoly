@@ -1,34 +1,31 @@
 'use strict';
  
 var React = require('react-native');
+var AchievedList = require('./AchievedList')
  
 var {
     StyleSheet,
     View,
     Text,
-    Component
+    Component,
+    NavigatorIOS
    } = React;
  
 var styles = StyleSheet.create({
-    description: {
-        fontSize: 20,
-        backgroundColor: 'white'
-    },
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        flex: 1
     }
 });
  
 class Achieved extends Component {
     render() {
         return (
-        <View style={styles.container}>
-          <Text style={styles.description}>
-            Achieved Tab
-          </Text>
-      </View>
+            <NavigatorIOS
+              style={styles.container}
+              initialRoute={{
+                title: 'Achieved',
+                component: AchievedList
+              }}/> 
         );
     }
 }
